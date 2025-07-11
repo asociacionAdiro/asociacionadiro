@@ -24,13 +24,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'django-insecure-0*(x_o2uf#(x$^np=!j_qh8)ey5t4x+u#-w9xz_c0h($!8m1@v'
-SECRET_KEY = config('DJANGO_SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+SECRET_KEY = 'django-insecure-0*(x_o2uf#(x$^np=!j_qh8)ey5t4x+u#-w9xz_c0h($!8m1@v'
+# SECRET_KEY = config('DJANGO_SECRET_KEY')
+# DEBUG = config('DEBUG', default=False, cast=bool)
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = False
+# DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['adiro.org', 'www.adiro.org']
+# ALLOWED_HOSTS = ['adiro.org', 'www.adiro.org']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -98,8 +100,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'adiro',
-        'USER': 'adiro',
-        'PASSWORD': 'administracion-2025-Adiro',
+        'USER': 'postgres', 
+        'PASSWORD': 'DOVI004A1',
+        #'PASSWORD': 'administracion-2025-Adiro',
         'HOST': 'localhost',
         'PORT': '5432',
 
