@@ -101,8 +101,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'adiro',
         'USER': 'postgres', 
-        'PASSWORD': 'DOVI004A1',
-        #'PASSWORD': 'administracion-2025-Adiro',
+        #'PASSWORD': 'DOVI004A1',
+        'PASSWORD': 'administracion-2025-Adiro',
         'HOST': 'localhost',
         'PORT': '5432',
 
